@@ -4,11 +4,11 @@ import { CourseType } from "../types";
 
 const Content: React.FC<{ list: CourseType[] }> = ({ list }) => {
   const listCourses = list.map(course => {   
-    return <li> {course.name} </li>
+    return  <li> {course.name}, {course.exerciseCount} </li>
   })
   
   return (
-    <div> <ul>{listCourses} </ul></div>
+    <div> <p> Content: </p> <ul> {listCourses} </ul> </div>
   )
 }
 
